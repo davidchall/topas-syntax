@@ -1,0 +1,70 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Topas
+scopeName: text.topas
+fileTypes: []
+uuid: 65752c66-cd2c-4af4-8afd-c4803161a801
+
+patterns:
+# some lines are explicitly commented
+- include: '#comment'
+
+# action lines are triggered by '=' character
+# and last until a blank line or another action line is triggered
+- name: meta.declaration.topas
+  begin: ^(?=.+=.+)
+  end: ^[(?=.*=)\s]
+  patterns:
+  - include: '#comment'
+  - include: '#include'
+  - include: '#data_type'
+  - include: '#parameter'
+  - include: '#boolean'
+  - include: '#string'
+  - include: '#numeric'
+  - include: '#operator'
+
+# anything else is a comment
+- name: comment.block.topas
+  match: .*
+
+
+repository:
+  comment:
+    name: comment.line.topas
+    match: '#.*$'
+
+  include:
+    name: keyword.other.topas
+    match: includeFile
+
+  data_type:
+    name: meta.topas
+    match: '^([bidus]v?):'
+    captures:
+      '1': {name: storage.type.topas}
+
+  parameter:
+    name: variable.parameter.topas
+    match: '([\w/]+/)([\w]+)'
+    captures:
+      '1': {name: entity.name.section.topas}
+      '2': {name: entity.other.attribute-name.topas}
+
+  string:
+    name: string.quoted.double.topas
+    begin: '"'
+    end: '"'
+
+  numeric:
+    name: constant.numeric.topas
+    match: '(?<!\w)[-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?'
+
+  boolean:
+    name: constant.language.topas
+    match: '"(?i:(true|false|t|f|1|0))"'
+
+  operator:
+    name: keyword.operator.topas
+    match: '[=+*-]'
+...
