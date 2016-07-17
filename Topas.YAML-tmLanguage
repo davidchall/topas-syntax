@@ -46,7 +46,7 @@ repository:
 
   parameter:
     name: variable.parameter.topas
-    match: '([\w/]+/)([\w]+)'
+    match: '(?i:(ma|el|is|ge|gr|ph|so|sc|tf|ts|vr)[/\w]*/)([\w]+)'
     captures:
       '1': {name: entity.name.section.topas}
       '2': {name: entity.other.attribute-name.topas}
