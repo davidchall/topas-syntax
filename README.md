@@ -1,7 +1,7 @@
 # topas-syntax
 Syntax highlighting for [TOPAS](http://topasmc.org) parameter files in [Sublime Text](http://www.sublimetext.com).
 
-![Screenshot](https://raw.githubusercontent.com/davidchall/topas-syntax/raw/topas_syntax.png)
+![Screenshot](https://github.com/davidchall/topas-syntax/raw/master/topas_syntax.png)
 
 ## Installation
 Installing packages for Sublime Text is easiest through the [Package Control](https://packagecontrol.io) plugin, and this package is no different.
