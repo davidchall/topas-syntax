@@ -16,7 +16,7 @@ patterns:
   end: ^[(?=.*=)\s]
   patterns:
   - include: '#comment'
-  - include: '#include'
+  - include: '#keyword'
   - include: '#data_type'
   - include: '#parameter'
   - include: '#boolean'
@@ -34,9 +34,9 @@ repository:
     name: comment.line.topas
     match: '#.*$'
 
-  include:
+  keyword:
     name: keyword.other.topas
-    match: includeFile
+    match: (?i:(includefile|inheritedvalue))
 
   data_type:
     name: meta.topas

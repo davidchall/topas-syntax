@@ -27,7 +27,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#include</string>
+					<string>#keyword</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -93,10 +93,10 @@
 			<key>name</key>
 			<string>meta.topas</string>
 		</dict>
-		<key>include</key>
+		<key>keyword</key>
 		<dict>
 			<key>match</key>
-			<string>includeFile</string>
+			<string>(?i:(includefile|inheritedvalue))</string>
 			<key>name</key>
 			<string>keyword.other.topas</string>
 		</dict>
