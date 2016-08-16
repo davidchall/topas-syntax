@@ -72,5 +72,5 @@ repository:
 
   operator:
     name: keyword.operator.topas
-    match: '[=+*-]'
+    match: (=| [-+*] )
 ...

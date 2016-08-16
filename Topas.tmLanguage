@@ -129,7 +129,7 @@
 		<key>operator</key>
 		<dict>
 			<key>match</key>
-			<string>[=+*-]</string>
+			<string>(=| [-+*] )</string>
 			<key>name</key>
 			<string>keyword.operator.topas</string>
 		</dict>
