@@ -9,6 +9,12 @@ patterns:
 # some lines are explicitly commented
 - include: '#comment'
 
+- name: meta.declaration.topas
+  match: ^\s*(?i:(includefile))\s*(=)\s*[\./\w]+
+  captures:
+    '1': {name: keyword.other.topas}
+    '2': {name: keyword.operator.topas}
+
 # action lines are triggered by '=' character
 # and last until a blank line or another action line is triggered
 - name: meta.declaration.topas
@@ -36,7 +42,7 @@ repository:
 
   keyword:
     name: keyword.other.topas
-    match: (?i:(includefile|inheritedvalue))
+    match: (?i:inheritedvalue)
 
   data_type:
     name: meta.topas

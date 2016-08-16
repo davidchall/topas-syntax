@@ -13,6 +13,25 @@
 			<string>#comment</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.topas</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.topas</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(?i:(includefile))\s*(=)\s*[\./\w]+</string>
+			<key>name</key>
+			<string>meta.declaration.topas</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^(?=.+=.+)</string>
 			<key>end</key>
@@ -96,7 +115,7 @@
 		<key>keyword</key>
 		<dict>
 			<key>match</key>
-			<string>(?i:(includefile|inheritedvalue))</string>
+			<string>(?i:inheritedvalue)</string>
 			<key>name</key>
 			<string>keyword.other.topas</string>
 		</dict>
