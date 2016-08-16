@@ -89,7 +89,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^([bidus]v?):</string>
+			<string>^([bidus]v?c?):</string>
 			<key>name</key>
 			<string>meta.topas</string>
 		</dict>

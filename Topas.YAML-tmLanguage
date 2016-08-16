@@ -40,7 +40,7 @@ repository:
 
   data_type:
     name: meta.topas
-    match: '^([bidus]v?):'
+    match: '^([bidus]v?c?):'
     captures:
       '1': {name: storage.type.topas}
 
