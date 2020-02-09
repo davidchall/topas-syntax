@@ -28,8 +28,15 @@ Then you can use the [Project Specific Syntax Settings](https://packagecontrol.i
 }
 ```
 
-### Addendum
-The actual colors used in the syntax highlighting is determined by your theme, so you may see a different color scheme to the image above. I am using the Monokai theme.
-
-It might be possible to import the `Topas.tmLanguage` grammar file into other editors such as [TextMate](https://macromates.com). However, I stick to Sublime Text. :-)
+## Other text editors
+It might be possible to import the `Topas.tmLanguage` grammar file into other editors such as [TextMate](https://macromates.com).
 Please let me know if you install it on another editor, and I can update the README.
+
+This syntax highlighting logic has also been adapted for other text editors:
+
+* [Atom](https://github.com/joostverburg/language-topas)
+* [VS Code](https://github.com/samuelpeet/topas-vscode)
+
+
+### Note about colors
+The actual colors used in the syntax highlighting is determined by your theme, so you may see a different color scheme to the image above. I am using the Monokai theme.
